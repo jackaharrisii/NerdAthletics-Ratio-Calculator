@@ -1,12 +1,40 @@
-<h1>Nerd Athletics Weightlifting Performance Calculator</h1>
-<!-- <pre>{{ratios|json}}</pre> -->
-<table >
-    <tr align = center>
-        <td>BASE LIFT</td>
-        <td>PERCENT OF CLEAN AND JERK</td>
-    </tr>
-    <tr *ngFor="let ratio of ratios" align=center>
-        <td>{{ratio.baseLift}}</td>
-        <td>{{ratio.ratio|percent}}</td>
-    </tr>
-</table>
+<body>
+
+    <h1>Nerd Athletics Weightlifting Performance Calculator</h1>
+    <!-- <pre>{{ratios|json}}</pre> -->
+    <table >
+        <tr align = center>
+            <td>BASE LIFT</td>
+            <td>PERCENT OF CLEAN AND JERK</td>
+        </tr>
+        <tr *ngFor="let ratio of ratios" align=center>
+            <td>{{ratio.baseLift}}</td>
+            <td>{{ratio.ratio|percent}}</td>
+        </tr>
+    </table>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB7BeYaF8iRUHZqe8IBWlreAyTJEYnNIfE",
+    authDomain: "nerdathleticsweightlifting.firebaseapp.com",
+    projectId: "nerdathleticsweightlifting",
+    storageBucket: "nerdathleticsweightlifting.appspot.com",
+    messagingSenderId: "277155819757",
+    appId: "1:277155819757:web:85ae7beaa9a0fcb5211ce4",
+    measurementId: "G-XXW55WVDDJ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+</body>
